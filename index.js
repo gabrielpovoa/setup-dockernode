@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
 
     // Cria o objeto de resposta
     const response = {
-        message: "Hello World from Docker v1.2 + Node.js 🚀",
+        message: "Hello World from Docker v1.2 + Node.js 🚀 Author: " + process.env.AUTHOR,
         datetime: new Date().toLocaleString() // dia e hora atuais formatados
     };
 
